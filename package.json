@@ -49,6 +49,7 @@
     "postcss-mixins": "^4.0.1",
     "postcss-use": "^2.0.2",
     "prismjs": "^1.5.1",
+    "purify-css": "^1.1.9",
     "require-dir": "^0.3.0",
     "rollup": "^0.36.3",
     "rollup-plugin-buble": "^0.14.0",
@@ -75,6 +76,7 @@
   "scripts": {
     "prestart": "npm install",
     "start": "gulp --dev",
-    "build": "npm run prestart && gulp"
+    "build": "npm run prestart && gulp",
+    "cssreport": "purifycss dist/assets/toolkit/styles/toolkit.css dist/**/*.html --rejected --info --out temp/toolkit.pure.css"
   }
 }
